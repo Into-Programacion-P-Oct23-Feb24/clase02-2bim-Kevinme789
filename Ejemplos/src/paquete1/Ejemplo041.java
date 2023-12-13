@@ -32,8 +32,10 @@ public class Ejemplo041 {
            suma = suma + arreglo1[i];
         
         }
+        cadena = String.format("%sLa suma de los datos es: %d\n", 
+                cadena, suma);
          cadena = cadena.toUpperCase();
-        System.out.printf("%s%d\n",cadena, suma);
+        System.out.printf("%s",cadena);
     }
 
 }
