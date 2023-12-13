@@ -16,6 +16,7 @@ public class Ejemplo041 {
      */
     public static void main(String[] args) {
         String cadena = "";
+        int suma = 0;
         // Declarar y generar arreglos en Java
         
         // arreglo de tipo entero
@@ -28,9 +29,11 @@ public class Ejemplo041 {
             //tiene el arreglo asociado
             cadena = String.format("%sSubíndice o Índice %d, con valor %d\n",
                     cadena,i, arreglo1[i]);
+           suma = suma + arreglo1[i];
         
         }
-        System.out.println(cadena);
+         cadena = cadena.toUpperCase();
+        System.out.printf("%s%d\n",cadena, suma);
     }
 
 }
