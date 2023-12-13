@@ -26,10 +26,12 @@ public class Ejemplo062 {
         // Se asigna valores al arreglo, pidiendo valores por teclado
         // se usa un ciclo repetitivo
         for (int i = 0; i < arreglo1.length; i++) {
-        
+        // Se pide un valor
             System.out.println("Ingrese un valor para el arreglo");
             dato = entrada.nextInt();
-            if (dato<=9 && dato>=5 || dato>=11 && dato <=14){
+            // Si el valor ingresado es menor a 9,
+            // si es 12 o mayor a 14 se imprime 5
+            if (dato<=9 && dato>=5 || dato==11 || dato ==13 || dato ==14 ){
               arreglo1[i] = dato;
             }else{
              arreglo1[i] = 5;
